@@ -10,11 +10,11 @@ include_once(G5_PATH.'/head.php');
     <!-- CONTENTS -->
     <div id="job119_contents">
 
-      <ul class="path pc">
+      <!-- <ul class="path pc">
         <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
         <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 ></a></li>
         <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
-      </ul>
+      </ul> -->
 
       <aside class="side_nav_wrap pc">
         <div class="leftside_nav">
@@ -55,6 +55,7 @@ include_once(G5_PATH.'/head.php');
           이용하기 위한 사용설명서 입니다.
         </p> -->
         <div class="faq_main_img">
+          <img src="images/intro/quotes.png" alt="quotation mark" class="pc">
           <img src="images/faq/faq_main.png" alt="직장갑질119와 함께해주세요." class="pc">
           <img src="images/faq/m_faq_main.png" alt="직장갑질119와 함께해주세요." class="mb">
         </div>
@@ -161,7 +162,7 @@ include_once(G5_PATH.'/head.php');
                   또한 회사(팀) 내부조사 등을 통해 조직 내에서 성별・세대별・직책별로 갑질을 인식하는<br class="pc">
                   문화적 차이를 확인할 수 있습니다.
                 </p>
-                <div class="faq_content_btn"><a href="#">확인하러가기 ></a></div>
+                <div class="faq_content_btn"><a href="<?php echo G5_URL ?>/test01.php">확인하러가기 ></a></div>
               </div>
             </div>
           </li>
@@ -188,7 +189,7 @@ include_once(G5_PATH.'/head.php');
                 <!-- <video src="#" width="247" height="139" autoplay="no" poster=images/intro/video.png>
                   <source src="https://" type="video/mp4">
                 </video> -->
-                <div class="intro_txt02_num03_btn"><a href="<?php echo G5_URL ?>/counsel01.php">사바삼 바로가기 ></a></div>
+                <div class="faq_content_btn"><a href="<?php echo G5_URL ?>/counsel01.php">사바삼 바로가기 ></a></div>
                 <p>
                   ➋ 갑질위키<br class="pc">
                   온갖 백과사전(위키)가 다 있는데 직장 갑질 백과사전은 왜 없나요?<br class="pc">
@@ -200,7 +201,7 @@ include_once(G5_PATH.'/head.php');
                 <!-- <video src="#" width="247" height="139" autoplay="no" poster=images/intro/video.png>
                   <source src="https://" type="video/mp4">
                 </video> -->
-                <div class="intro_txt02_num03_btn"><a href="http://gabjilwiki.com/" target="_blank">갑질위키 ></a></div>
+                <div class="faq_content_btn"><a href="http://gabjilwiki.com/" target="_blank">갑질위키 ></a></div>
               </div>
             </div>
           </li>
@@ -223,7 +224,7 @@ include_once(G5_PATH.'/head.php');
                 <!-- <video src="#" width="247" height="139" autoplay="no" poster=images/intro/video.png>
                   <source src="https://" type="video/mp4">
                 </video> -->
-                <div class="intro_txt02_num03_btn"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=case">승리사례 모음집 ></a></div>
+                <div class="faq_content_btn"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=case">승리사례 모음집 ></a></div>
                 <p>
                   ➋ 노하우
                   갑질에 맞서 싸워본 자만이 아는 진짜 노하우!<br class="pc">
@@ -235,7 +236,7 @@ include_once(G5_PATH.'/head.php');
                 <!-- <video src="#" width="247" height="139" autoplay="no" poster=images/intro/video.png>
                   <source src="https://" type="video/mp4">
                 </video> -->
-                <div class="intro_txt02_num03_btn"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=knowhow">노하우 바로가기 ></a></div>
+                <div class="faq_content_btn"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=knowhow">노하우 바로가기 ></a></div>
               </div>
             </div>
           </li>
