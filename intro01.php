@@ -1,0 +1,119 @@
+<?php
+include_once('./_common.php');
+
+define('_INDEX_', true);
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+include_once(G5_PATH.'/head.php');
+?>
+
+    <!-- CONTENTS -->
+    <div id="job119_contents">
+
+      <!-- <ul class="path pc">
+        <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
+        <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 ></a></li>
+        <li><a href="<?php echo G5_URL ?>/intro01.php">소개 ></a></li>
+        <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
+      </ul> -->
+
+      <aside class="side_nav_wrap pc">
+        <div class="leftside_nav">
+
+          <ul class="side_nav">
+
+            <li class="side_nav_title"><span>직장갑질119</span></li>
+            <li class="side_nav_sub_menu">
+              <a href="<?php echo G5_URL ?>/" class="side_nav_sub_menu_btn"><span>소개</span><img src="images/common/down_arrow.png"></a>
+              <ul>
+                <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
+                <li><a href="<?php echo G5_URL ?>/intro02.php">활동소개</a></li>
+                <li><a href="<?php echo G5_URL ?>/intro03.php">연혁</a></li>
+              </ul>
+            </li>
+            <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
+            <li class="side_nav_sub_menu">
+              <a href="<?php echo G5_URL ?>/support01.php" class="side_nav_sub_menu_btn"><span>후원참여</span><img src="images/common/down_arrow.png"></a>
+              <ul>
+                <li><a href="<?php echo G5_URL ?>/support01.php">후원안내</a></li>
+                <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=support02">후원해주시는 분들</a></li>
+                <li><a href="<?php echo G5_URL ?>/support03.php">후원참여</a></li>
+              </ul>
+            </li>
+            <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
+
+          </ul>
+
+        </div>
+      </aside>
+
+      <div class="qmenu pc"><a href="http://www.gabjil119.com/" target="_blank"><img src="images/common/quick.png" alt="상담하기 119"></a></div>
+
+      <div class="intro_main">
+        <div class="intro_main_img01">
+          <img src="images/intro/quotes.png" alt="quotation mark" class="pc">
+          <img src="images/intro/intro_main_txt01.png" alt="직장갑질119를 소개합니다." class="pc">
+          <img src="images/intro/m_intro_main_txt01.png" alt="직장갑질119를 소개합니다." class="mb">
+        </div>
+        <ul class="intro_main_btn">
+          <li class="intro_main_btn_list01 active"><a href="<?php echo G5_URL ?>/intro01.php"></a></li>
+          <li class="intro_main_btn_list02"><a href="<?php echo G5_URL ?>/intro02.php"></a></li>
+          <li class="intro_main_btn_list03"><a href="<?php echo G5_URL ?>/intro03.php"></a></li>
+        </ul>
+      </div>
+
+      <div class="intro_txt01">
+        <!-- <p class="pc">직장갑질119는,</p>
+        <div class="intro_txt_line pc"></div> -->
+        <!-- <h2>당신 오늘도 회사에 불만 많으신가요?</h2>
+
+        <p>
+          연차도 마음대로 못쓰게 하는, <b>연차갑질!</b><br class="pc">
+          회식, 음주, 흡연 강요하는, <b>강요갑질!</b><br class="pc">
+          월급, 주휴수당 안주는 <b>임금갑질!</b><br class="pc">
+          사장이, 상사가 마음대로 일을 부리는 <b>사장갑질!</b><br class="pc">
+          성희롱, 성폭력 <b>성별갑질!</b><br class="pc">
+          욕하고, 왕따 시키고, 고성에, 비하에, 일하러온 회사인데 왜 이렇게 괴로운거죠!
+        </p>
+
+        <p>
+          삐-뽀-삐-뽀-<br class="pc">
+          <b>그래서 나타났습니다! 직장갑질119!</b><br class="pc">
+          직장갑질119는 노동전문가, 변호사, 노무사 150여 명이 함께하는 민간공익단체입니다.<br class="pc">
+          저희는 2017년 11월1일 출범했어요.
+        </p>
+
+        <a href="<?php echo G5_URL ?>/intro03.php" class="history_more"><img src="images/intro/history_more.png" alt="연혁보기"></a>
+
+        <p>
+          노동인권실현을위한 노무사모임, 민주노총 법률원(법무법인 여는),<br class="pc">
+          민주사회를위한변호사모임노동위원회, 공익인권법재단 공감, 희망을만드는법 등의 법률단체와<br class="pc">
+          비정규직없는세상만들기, 노동건강연대, 전국불안정노동철폐연대 등<br class="pc">
+          노동단체 활동가들이 자원활동으로 함께하고 있어요.
+        </p>
+     
+        <p>
+          <b>왜 이렇게까지 하냐구요?</b><br class="pc">
+          직장 내 괴롭힘 금지법이 통과된 이후 하루 평균 100건에 달하는 상담을 하고 있습니다.<br class="pc">
+          끊이지 않는 갑질, 매일매일 갑질과 괴롭힘에 힘든 직장인들이 많은데<br class="pc">
+          어찌 가만히 있을 수 있겠어요!
+        </p>
+     
+        <p><b>움직여보니, 뭔가 바뀌긴 하더라!</b></p> -->
+        <h2>움직여보니, 뭔가 바뀌긴 하더라!</h2>
+     
+        <p style="margin-top:0px;">
+          직장갑질119를 만나 갑질을 이겨내신 상담자분이 하신 말입니다.<br class="pc">
+          괴롭힘과 갑질에 맞서기, 당당함보단 두려움이 앞서는 것이 사실입니다.<br class="pc">
+          당장 무엇을 해야 할지 모르겠고, 어떤 것을 준비해야 하는지부터 막막하시죠.<br class="pc">
+          그럴 때 직장갑질 119를 찾아주세요. 직장갑질119가 함께 동행 하겠습니다.<br class="pc">
+          우리가 쏘아올린 작은 공이 나의 회사를 바꾸고, 세상을 조금씩 바꿀 수 있어요.
+      </p>
+
+    </div>
+
+  </div>
+<?php
+include_once(G5_PATH.'/tail.php');
+?>
