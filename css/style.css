@@ -56,23 +56,23 @@ header, footer, article, section, aside, details, figcaption, figure, hgroup, me
 /* --------------------------------
 HEADER
 ------------------------------- */
-#header .smenu_wrap {height:50px; background-color:#ffffff; border-bottom:1px solid #d9d9d9;}
+#header .smenu_wrap {height:50px; background-color:#535353; border-bottom:1px solid #d9d9d9;}
 
 #header .smenu {position:relative; font-family:'SpoqaHanSansLight'; font-size:14px;}
 #header .smenu li {height: 50px;}
-#header .smenu li a {color:#2f2f2f;}
+#header .smenu li a {color:#ffffff;}
 #header .smenu li a.button{
 	border-radius: 20px;
     border: 1px solid #969696;
     padding: 4px 10px 5px;
 }
-#header .smenu li:nth-child(1) {position:absolute; left:53.8%; top:17px;}
-#header .smenu li:nth-child(2) {position:absolute; left:60.5%; top:17px;}
-#header .smenu li:nth-child(3) img {width:30px; height:30px; position:absolute; left:67.2%; top:9px;}
+#header .smenu li:nth-child(1) {position:absolute; left:71%; top:17px;}
+#header .smenu li:nth-child(2) {position:absolute; left:78%; top:17px;}
+#header .smenu li:nth-child(3) img {width:30px; height:30px; position:absolute; left:85%; top:9px;}
 #header .smenu li:nth-child(3) span {position:absolute; left:70%; top:17px;}
-#header .smenu li:nth-child(4) img {width:30px; height:30px; position:absolute; left:71.8%; top:9px;}
+#header .smenu li:nth-child(4) img {width:30px; height:30px; position:absolute; left:88%; top:9px;}
 #header .smenu li:nth-child(4) span {position:absolute; left:79%; top:17px;}
-#header .smenu li:nth-child(5) img {width:30px; height:30px; position:absolute; left:76.2%; top:9px;}
+#header .smenu li:nth-child(5) img {width:30px; height:30px; position:absolute; left:91%; top:9px;}
 
 #header .gnb_wrap .logo {position: absolute; left:14.8%; top:21.2px; z-index: 2;}
 
