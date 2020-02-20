@@ -10,10 +10,10 @@ include_once(G5_PATH.'/head.php');
     <!-- CONTENTS -->
     <div id="job119_contents">
 
-      <ul class="path pc">
+      <!-- <ul class="path pc">
         <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
         <li><a href="<?php echo G5_URL ?>/test01.php">갑질TEST</a></li>
-      </ul>
+      </ul> -->
 
       <aside class="test_side_nav_wrap pc">
         <div class="leftside_nav">
