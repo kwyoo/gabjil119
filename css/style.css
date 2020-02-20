@@ -480,7 +480,7 @@ JOB119 COMMON
 .side_nav_wrap {
 	width:260px; height:auto;
 	background: #ffffff;
-	position:absolute; left:14.8%; top:240px;
+	position:absolute; left:14.8%; top:226px;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -1088,7 +1088,9 @@ FAQ
 .faq_wrap .faq_list .faq_content {display:none; overflow:hidden;}
 .faq_wrap .faq_list .faq_content {width:100%; height:100%; background-color:#f8f8f8; border-top:1px solid #bcbcbc;}
 .faq_wrap .faq_list .faq_content > img {right: -65px; position: relative; top:22px;}
-.faq_wrap .faq_list .faq_content .faq_text_component {position: relative;  width: 83%;margin: 0 20px 20px 14.7%;}
+.faq_wrap .faq_list .faq_content .faq_text_component {position: relative;
+    width: 80%;
+    margin: 0 20px 20px 95px;}
 .faq_wrap .faq_list .faq_content .faq_text_component p:nth-child(2) {margin-top:15px; font-size: 16px; line-height: 2; color: #2f2f2f;}
 .faq_wrap .faq_list .faq_content .faq_text_component p:nth-child(3) {font-size: 16px; line-height: 2; color: #2f2f2f;}
 .faq_wrap .faq_list .faq_content .faq_text_component p:nth-child(3) > span {left:11.2%; position: relative;}
@@ -1122,6 +1124,18 @@ FAQ
 
 .faq_wrap .faq_list > .faq_item:nth-child(7) .faq_content {width:100%; background-color:#f8f8f8;}
 .faq_wrap .faq_list > .faq_item:nth-child(7) .faq_content p {font-size: 16px; line-height: 2; color: #2f2f2f;}
+
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+	.faq_main {max-width:100%; margin:0 auto;}
+	.faq_main p {left:0; top:32%;}
+	.faq_wrap {max-width:96%; left:0; top:-23px; margin-bottom:100px;}
+	.faq_main .faq_main_img {width:100%; left:0;}
+	.faq_main .faq_main_img img {width:316px; margin:0 auto;}
+	.faq_wrap .faq_list .faq_content .faq_text_component {position: relative;
+		width: 80%;
+		margin: 0 20px 20px 18%;}
+}
 
 @media only screen and (max-width: 767px) {
 	.faq_main {height:80.5px; max-width:100%; margin-top:7%;}
@@ -1177,14 +1191,6 @@ FAQ
 		position: relative;
 		top: 31px;}
 
-}
-
-@media only screen and (min-width:768px) and (max-width: 1023px) {
-	.faq_main {max-width:100%; margin:0 auto;}
-	.faq_main p {left:0; top:32%;}
-	.faq_wrap {max-width:96%; left:0; top:-23px; margin-bottom:100px;}
-	.faq_main .faq_main_img {width:100%; left:0;}
-	.faq_main .faq_main_img img {width:316px; margin:0 auto;}
 }
 
 @media only screen and (min-width: 1680px) {
@@ -1824,7 +1830,7 @@ BOARD COMMON
 
 #board_contents::after {display: block; clear:both; content:"";}
 
-.board_side_nav_wrap {width:260px; height:auto; background: #ffffff; position:absolute; left:14.8%; top:240px;}
+.board_side_nav_wrap {width:260px; height:auto; background: #ffffff; position:absolute; left:14.8%; top:226px;}
 .board_side_nav_wrap .leftside_nav ul > li {border-bottom:1px solid #dedede; padding-bottom:60px;}
 
 .board_side_nav_wrap .leftside_nav ul li a {
