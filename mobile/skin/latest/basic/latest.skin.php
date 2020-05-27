@@ -64,7 +64,7 @@ $is_show_next_prev = ($list_count > 4) ? 1 : 0;
                 <div class="lt_info">
                     <?php echo $list[$i]['name'] ?>
                     <span class="lt_date">
-                        <?php echo $list[$i]['datetime'] ?>
+                        <?php echo str_replace('-', '.', $list[$i]['datetime']) ?>
                     </span>
                 </div>
             </li>

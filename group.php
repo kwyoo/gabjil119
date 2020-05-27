@@ -12,8 +12,8 @@ include_once(G5_PATH.'/head.php');
 
       <!-- <ul class="path pc">
         <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
-        <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 ></a></li>
-        <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+        <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 ></a></li>
+        <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
       </ul> -->
 
       <aside class="side_nav_wrap pc">
@@ -25,19 +25,19 @@ include_once(G5_PATH.'/head.php');
             <li class="side_nav_sub_menu">
               <a href="<?php echo G5_URL ?>/" class="side_nav_sub_menu_btn"><span>소개</span><img src="images/common/down_arrow.png"></a>
               <ul>
-                <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro02.php">활동소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro03.php">연혁</a></li>
+                <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro02">활동소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro03">연혁</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+            <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
             <li class="side_nav_sub_menu">
               <a href="<?php echo G5_URL ?>/support01.php" class="side_nav_sub_menu_btn"><span>후원참여</span><img src="images/common/down_arrow.png"></a>
               <ul>
                 <li><a href="<?php echo G5_URL ?>/support01.php">후원안내</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=support02">후원해주시는 분들</a></li>
-                <li><a href="<?php echo G5_URL ?>/support03.php">후원참여</a></li>
+                
               </ul>
             </li>
             <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>

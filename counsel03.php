@@ -26,7 +26,7 @@ include_once(G5_PATH.'/head.php');
               <span>나의 숨겨진 갑질본능은?</span>
             </li>
             <li class="active">
-              <a href="<?php echo G5_URL ?>/counsel01.php">사・바・삼</a>
+              <a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사・바・삼</a>
               <span>사무실을 바꾸는 3분 상담소</span>
             </li>
             <li>
@@ -54,7 +54,7 @@ include_once(G5_PATH.'/head.php');
       <div class="counseling_txt01">
 
         <ul class="counseling_txt_tab">
-          <li><a href="<?php echo G5_URL ?>/counsel01.php">실업급여</a></li>
+          <li><a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">실업급여</a></li>
           <li><a href="<?php echo G5_URL ?>/counsel02.php">체불임금</a></li>
           <li class="active"><a href="<?php echo G5_URL ?>/counsel03.php">괴롭힘</a></li>
           <li><a href="<?php echo G5_URL ?>/counsel04.php">부당해고</a></li>

@@ -32,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <span>나의 숨겨진 갑질본능은?</span>
                 </li>
                 <li>
-                    <a href="<?php echo  ?>/counsel01.php">사・바・삼</a>
+                    <a href="<?php echo  ?>/bbs/board.php?bo_table=sabasam">사・바・삼</a>
                     <span>사무실을 바꾸는 3분 상담소</span>
                 </li>
                 <li>

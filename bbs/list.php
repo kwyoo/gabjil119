@@ -48,6 +48,11 @@ if ($sca || $stx || $stx === '0') {     //검색이면
     if (!$spt) $spt = $min_spt;
 
     $sql_search .= " and (wr_num between {$spt} and ({$spt} + {$config['cf_search_part']})) ";
+    
+    if ($write_table == "g5_write_case") {
+        $y_ear = date("Y");
+        $sql_search .= " and wr_datetime >= '".$y_ear."-01-01 00:00:00' and wr_datetime <= '".$y_ear."-12-31 23:59:59' ";
+    }
 
     // 원글만 얻는다. (코멘트의 내용도 검색하기 위함)
     // 라엘님 제안 코드로 대체 http://sir.kr/g5_bug/2922
@@ -172,9 +177,17 @@ if ($sst) {
 }
 
 if ($is_search_bbs) {
+    if ($write_table == "g5_write_case") {
+        $y_ear = date("Y");
+        $sql_search .= " and wr_datetime >= '".$y_ear."-01-01 00:00:00' and wr_datetime <= '".$y_ear."-12-31 23:59:59' ";
+    }
     $sql = " select distinct wr_parent from {$write_table} where {$sql_search} {$sql_order} limit {$from_record}, $page_rows ";
 } else {
-    $sql = " select * from {$write_table} where wr_is_comment = 0 ";
+    $sql = " select * from {$write_table} where wr_is_comment = 0 ";    
+    if ($write_table == "g5_write_case") {
+        $y_ear = date("Y");
+        $sql .= " and wr_datetime >= '".$y_ear."-01-01 00:00:00' and wr_datetime <= '".$y_ear."-12-31 23:59:59' ";
+    }
     if(!empty($notice_array))
         $sql .= " and wr_id not in (".implode(', ', $notice_array).") ";
     $sql .= " {$sql_order} limit {$from_record}, $page_rows ";

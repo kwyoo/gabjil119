@@ -14,13 +14,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <!-- CONTENTS -->
 <div id="board_contents">
-
-    <!-- <ul class="path pc">
-        <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
-        <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 ></a></li>
-        <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인</a></li>
-    </ul> -->
-
     <aside class="side_nav_wrap pc">
         <div class="leftside_nav">
 
@@ -30,19 +23,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <li class="side_nav_sub_menu">
               <a href="<?php echo G5_URL ?>/" class="side_nav_sub_menu_btn"><span>소개</span><img src="/images/common/down_arrow.png"></a>
               <ul>
-                <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro02.php">활동소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro03.php">연혁</a></li>
+                <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro02">활동소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro03">연혁</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
-            <li class="side_nav_sub_menu">
+            <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
+            <li class="active"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
+            <li class="side_nav_sub_menu support">
               <a href="<?php echo G5_URL ?>/support01.php" class="side_nav_sub_menu_btn"><span>후원참여</span><img src="/images/common/down_arrow.png"></a>
               <ul>
                 <li><a href="<?php echo G5_URL ?>/support01.php">후원안내</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=support02">후원해주시는 분들</a></li>
-                <li><a href="<?php echo G5_URL ?>/support03.php">후원참여</a></li>
+                
               </ul>
             </li>
             <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
@@ -107,7 +100,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <td class="report_board_header">
                 <?php
                 if ($list[$i]['is_notice']) // 공지사항
-                    echo '<span class="notice_icon">공지</span>';
+                    echo '<span class="notice_icon darkred">[공지]</span>';
                 else if ($wr_id == $list[$i]['wr_id'])
                     echo "<span class=\"bo_current\">열람중</span>";
                 else
@@ -138,7 +131,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             <?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><span class="cnt_cmt"><?php echo $list[$i]['wr_comment']; ?></span><span class="sound_only">개</span><?php } ?>
                         </div>
                     </td>
-                    <td class="report_board_date"><?php echo $list[$i]['datetime2'] ?></td>
+                    <td class="report_board_date"><?php echo str_replace('-', '.', $list[$i]['datetime']) ?></td>
                     <td class="report_board_view"><?php echo $list[$i]['wr_hit'] ?></td>
                 </tr>
             <?php } ?>

@@ -16,6 +16,7 @@
         ".svg",
         ".ai",
         ".png",
+        "dbconfig.php",
         "**/session/**",
         "**/cache/**"
     ]
@@ -38,6 +39,7 @@
         ".svg",
         ".ai",
         ".png",
+        "dbconfig.php",
         "**/session/**",
         "**/cache/**"
     ]

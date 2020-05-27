@@ -90,7 +90,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <td class="notice_board_header">
                 <?php
                 if ($list[$i]['is_notice']) // 공지사항
-                    echo '<span class="notice_icon">공지</span>';
+                    echo '<span class="notice_icon darkred">[공지]</span>';
                 else if ($wr_id == $list[$i]['wr_id'])
                     echo "<span class=\"bo_current\">열람중</span>";
                 else
@@ -121,7 +121,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             <?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><span class="cnt_cmt"><?php echo $list[$i]['wr_comment']; ?></span><span class="sound_only">개</span><?php } ?>
                         </div>
                     </td>
-                    <td class="notice_board_date"><?php echo $list[$i]['datetime2'] ?></td>
+                    <td class="notice_board_date"><?php echo str_replace('-', '.', $list[$i]['datetime']) ?></td>
                     <td class="notice_board_view"><?php echo $list[$i]['wr_hit'] ?></td>
                 </tr>
             <?php } ?>

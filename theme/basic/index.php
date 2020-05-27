@@ -32,10 +32,14 @@ include_once(G5_THEME_PATH.'/head.php');
           <img src="<?php echo G5_URL ?>/images/main/img01.png" alt="갑질 TEST" class="slidein_img pc">
           <img src="<?php echo G5_URL ?>/images/main/m_img01.png" alt="갑질 TEST" class="slidein_img mb">
           <div class="slidein pc">
-            <div class="slidein_txt">갑질 TEST</div>
+            <div class="slidein_txt">
+              갑질 TEST
+              <p>나의 갑질 감수성은?</p>
+              <p>우리회사 갑질지수는?</p>
+            </div>
           </div>
         </div>
-        <div class="sub1-2" onclick="location.href='<?php echo G5_URL ?>/counsel01.php';">
+        <div class="sub1-2" onclick="location.href='<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam';">
           <div class="sub1-2_txt mb">
             <span>사・바・삼</span><br>
             <span>사무실을 바꾸는 3분 상담소</span>
@@ -43,7 +47,10 @@ include_once(G5_THEME_PATH.'/head.php');
           <img src="<?php echo G5_URL ?>/images/main/img02.png" alt="사무실을 바꾸는 3분 상담소" class="slidein_img pc">
           <img src="<?php echo G5_URL ?>/images/main/m_img02.png" alt="사무실을 바꾸는 3분 상담소" class="slidein_img mb">
           <div class="slidein pc">
-            <div class="slidein_txt">사・바・삼</div>
+            <div class="slidein_txt">
+              사・바・삼
+              <p>사무실을 바꾸는 3분 상담소</p>
+            </div>
           </div>
         </div>
         <div class="sub1-3" onclick="location.href='<?php echo G5_BBS_URL ?>/board.php?bo_table=case';">
@@ -54,7 +61,11 @@ include_once(G5_THEME_PATH.'/head.php');
           <img src="<?php echo G5_URL ?>/images/main/img03.png" alt="Campaign" class="slidein_img pc">
           <img src="<?php echo G5_URL ?>/images/main/m_img03.png" alt="Campaign" class="slidein_img mb">
           <div class="slidein pc">
-            <div class="slidein_txt">Campaign</div>
+            <div class="slidein_txt">
+              Campaign
+              <p>119가 선정한 갑질뿌수기</p>
+              <p>우수사례 모음과 노하우</p>
+            </div>
           </div>
         </div>
       </section>

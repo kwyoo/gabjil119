@@ -6,7 +6,7 @@ if (G5_IS_MOBILE) {
     return;
 }
 
-if ($_SERVER["PHP_SELF"] != "/index.php"){
+// if ($_SERVER["PHP_SELF"] != "/index.php"){
 ?>
     <!-- FOOTER -->
     <footer>
@@ -19,7 +19,7 @@ if ($_SERVER["PHP_SELF"] != "/index.php"){
       </p>
     </footer>
 <?php
-}
+// }
 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
 <?php
 }

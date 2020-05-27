@@ -12,7 +12,7 @@ include_once(G5_PATH.'/head.php');
 
       <!-- <ul class="path pc">
         <li><a href="<?php echo G5_URL ?>">홈 ></a></li>
-        <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 ></a></li>
+        <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 ></a></li>
         <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
       </ul> -->
 
@@ -23,24 +23,24 @@ include_once(G5_PATH.'/head.php');
 
             <li class="side_nav_title"><span>직장갑질119</span></li>
             <li class="side_nav_sub_menu">
-              <a href="<?php echo G5_URL ?>/" class="side_nav_sub_menu_btn"><span>소개</span><img src="images/common/down_arrow.png"></a>
+              <a href="/bbs/content.php?co_id=intro01" class="side_nav_sub_menu_btn"><span>소개</span><img src="images/common/down_arrow.png"></a>
               <ul>
-                <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro02.php">활동소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/intro03.php">연혁</a></li>
+                <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro02">활동소개</a></li>
+                <li><a href="/bbs/content.php?co_id=intro03">연혁</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+            <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
-            <li class="side_nav_sub_menu">
+            <li class="side_nav_sub_menu support">
               <a href="<?php echo G5_URL ?>/support01.php" class="side_nav_sub_menu_btn"><span>후원참여</span><img src="images/common/down_arrow.png"></a>
               <ul>
                 <li><a href="<?php echo G5_URL ?>/support01.php">후원안내</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=support02">후원해주시는 분들</a></li>
-                <li><a href="<?php echo G5_URL ?>/support03.php">후원참여</a></li>
+                
               </ul>
             </li>
-            <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
+            <li class="active"><a href="<?php echo G5_URL ?>/faq.php">직장갑질 FAQ</a></li>
 
           </ul>
 
@@ -140,7 +140,7 @@ include_once(G5_PATH.'/head.php');
                   직장갑질119는 지금까지 받았던 제보사례들을 토대로 내가 다니는 회사의 갑질 정도를<br class="pc">
                   측정할 수 있는 갑질 지수를 만들었습니다. 정말로 그럴지 한번 확인해보러 가요!
                 </p>
-                <div class="faq_content_btn"><a href="#">확인하러가기 ></a></div>
+                <div class="faq_content_btn"><a href="/test01.php">확인하러가기 ></a></div>
               </div>
             </div>
           </li>
@@ -189,7 +189,7 @@ include_once(G5_PATH.'/head.php');
                 <!-- <video src="#" width="247" height="139" autoplay="no" poster=images/intro/video.png>
                   <source src="https://" type="video/mp4">
                 </video> -->
-                <div class="faq_content_btn"><a href="<?php echo G5_URL ?>/counsel01.php">사바삼 바로가기 ></a></div>
+                <div class="faq_content_btn"><a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사바삼 바로가기 ></a></div>
                 <p>
                   ➋ 갑질위키<br class="pc">
                   온갖 백과사전(위키)가 다 있는데 직장 갑질 백과사전은 왜 없나요?<br class="pc">

@@ -26,7 +26,7 @@ include_once(G5_PATH.'/head.php');
               <span>나의 숨겨진 갑질본능은?</span>
             </li>
             <li>
-              <a href="<?php echo G5_URL ?>/counsel01.php">사・바・삼</a>
+              <a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사・바・삼</a>
               <span>사무실을 바꾸는 3분 상담소</span>
             </li>
             <li>
@@ -67,10 +67,10 @@ include_once(G5_PATH.'/head.php');
           <h4 class="test_scon">다음은 채용 과정에서 경험 하거나 일을 하면서 노동조건과 관련하여 경험할 수 있는 내용입니다. 귀하가 현재 일하고 있는(혹은 최근에 일했던) 직장의 상황에 대해서 다음 항목별로 응답해 주십시오.</h4>
           <h3 class="test_text">임금·고용형태 등 취업정보사이트 채용정보가 실제와 다르거나, 면접에서 제시한 약속이 지켜지지 않는다.</h3>
           <div class="test_btn_box">
-            <button class="test_btn">전혀 그렇지 않다</button>
-            <button class="test_btn">그렇지 않은 편이다</button>
-            <button class="test_btn">보통이다</button>
-            <button class="test_btn">그런 편이다</button>
+            <button class="test_btn">전혀 그렇지 않다</button><br>
+            <button class="test_btn">그렇지 않은 편이다</button><br>
+            <button class="test_btn">보통이다</button><br>
+            <button class="test_btn">그런 편이다</button><br>
             <button class="test_btn">매우 그렇다</button>
           </div>
           <button class="test_prev">&lt; 이전문항</button>
@@ -233,18 +233,26 @@ include_once(G5_PATH.'/head.php');
         var box = $("#box1 .test_btn_box");
         box.empty();
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 5; go_test(idx + 1); }, text: "전혀 그렇지 않다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 4; go_test(idx + 1); }, text: "그렇지 않은 편이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 3; go_test(idx + 1); }, text: "보통이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 2; go_test(idx + 1); }, text: "그런 편이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 1; go_test(idx + 1); }, text: "매우 그렇다"}));
       }
       function btn_asc(){
         var box = $("#box1 .test_btn_box");
         box.empty();
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 1; go_test(idx + 1); }, text: "전혀 그렇지 않다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 2; go_test(idx + 1); }, text: "그렇지 않은 편이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 3; go_test(idx + 1); }, text: "보통이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 4; go_test(idx + 1); }, text: "그런 편이다"}));
+        box.append($("<br />"));
         box.append($("<button />", {class: "test_btn", click: function(){ score[idx] = 5; go_test(idx + 1); }, text: "매우 그렇다"}));
       }
       function go_test(num){

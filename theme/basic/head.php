@@ -33,10 +33,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
         <ul class="gnb">
           <li class="gnb01">
-            <a href="<?php echo G5_URL ?>/intro01.php"><span class="gnb_title">직장갑질119</span></a>
+            <a href="/bbs/content.php?co_id=intro01"><span class="gnb_title">직장갑질119</span></a>
             <ul class="gnb_sub_menu01">
-              <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
-              <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+              <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 소개</a></li>
+              <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
               <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
               <li><a href="<?php echo G5_URL ?>/support01.php">후원참여</a></li>
               <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질119 FAQ</a></li>
@@ -46,7 +46,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <a href="<?php echo G5_URL ?>/test01.php"><span class="gnb_title">갑질 TEST</span></a>
             <ul class="gnb_sub_menu02">
               <li><a href="<?php echo G5_URL ?>/test01.php">갑질 TEST<br><span class="gnb_sub_txt">나의 숨겨진 갑질본능은?</span></a></li>
-              <li><a href="<?php echo G5_URL ?>/counsel01.php">사・바・삼<br><span class="gnb_sub_txt">사무실을 바꾸는 3분 상담소</span></a></li>
+              <li><a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사・바・삼<br><span class="gnb_sub_txt">사무실을 바꾸는 3분 상담소</span></a></li>
               <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=case">승리사례 모음집<br><span class="gnb_sub_txt">직장갑질 뿌수기 공모전 모음</span></a></li>
               <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=knowhow">노하우<br><span class="gnb_sub_txt">갑질과 싸운 사람들의 꿀팁모음</span></a></li>
             </ul>
@@ -86,8 +86,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <li class="gnb01">
               <a href="javascript:gnb_swap('01');"><span class="gnb_title">직장갑질119</span><div class="gnb_mb_arrow"></div></a>
               <ul class="gnb_sub_menu01">
-                <li><a href="<?php echo G5_URL ?>/intro01.php">직장갑질119 소개</a></li>
-                <li><a href="<?php echo G5_URL ?>/group.php">함께하는 사람들</a></li>
+                <li><a href="/bbs/content.php?co_id=intro01">직장갑질119 소개</a></li>
+                <li><a href="/bbs/content.php?co_id=group">함께하는 사람들</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=report">사단법인 알림</a></li>
                 <li><a href="<?php echo G5_URL ?>/support01.php">후원참여</a></li>
                 <li><a href="<?php echo G5_URL ?>/faq.php">직장갑질119 FAQ</a></li>
@@ -97,7 +97,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
               <a href="javascript:gnb_swap('02');"><span class="gnb_title">갑질 TEST</span><div class="gnb_mb_arrow"></div></a>
               <ul class="gnb_sub_menu02">
                 <li><a href="<?php echo G5_URL ?>/test01.php">갑질 TEST<br><span class="gnb_sub_txt">나의 숨겨진 갑질본능은?</span></a></li>
-                <li><a href="<?php echo G5_URL ?>/counsel01.php">사・바・삼<br><span class="gnb_sub_txt">사무실을 바꾸는 3분 상담소</span></a></li>
+                <li><a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사・바・삼<br><span class="gnb_sub_txt">사무실을 바꾸는 3분 상담소</span></a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=case">승리사례 모음집<br><span class="gnb_sub_txt">직장갑질 뿌수기 공모전 모음</span></a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=knowhow">노하우<br><span class="gnb_sub_txt">갑질과 싸운 사람들의 꿀팁모음</span></a></li>
               </ul>

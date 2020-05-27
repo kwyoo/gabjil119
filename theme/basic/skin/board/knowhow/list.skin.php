@@ -32,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <span>나의 숨겨진 갑질본능은?</span>
                 </li>
                 <li>
-                    <a href="<?php echo G5_URL ?>/counsel01.php">사・바・삼</a>
+                    <a href="<?php echo G5_URL ?>/bbs/board.php?bo_table=sabasam">사・바・삼</a>
                     <span>사무실을 바꾸는 3분 상담소</span>
                 </li>
                 <li>
@@ -110,11 +110,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <td class="knowhow_board_header">
                 <?php
                 if ($list[$i]['is_notice']) // 공지사항
-                    echo '<span class="notice_icon">공지</span>';
+                    echo '<span class="notice_icon darkred">[공지]</span>';
                 else if ($wr_id == $list[$i]['wr_id'])
                     echo "<span class=\"bo_current\">열람중</span>";
                 else
-                    echo '<span>'.$list[$i]['num'].'</span>';
+                    // echo '<span>'.$list[$i]['num'].'</span>';
+                    echo '<span>'.str_pad($i+1, 2, "0", STR_PAD_LEFT).'</span>';
                 ?>
                     </td>
                     <td class="knowhow_board_contents">
@@ -141,7 +142,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             <?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><span class="cnt_cmt"><?php echo $list[$i]['wr_comment']; ?></span><span class="sound_only">개</span><?php } ?>
                         </div>
                     </td>
-                    <td class="knowhow_board_date"><?php echo $list[$i]['datetime2'] ?></td>
+                    <td class="knowhow_board_date"><?php echo str_replace('-', '.', $list[$i]['datetime']) ?></td>
                     <td class="knowhow_board_view"><?php echo $list[$i]['wr_hit'] ?></td>
                 </tr>
             <?php } ?>
